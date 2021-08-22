@@ -11,5 +11,12 @@
 
 <h2> This is my contact aap</h2>
 
+
+<form name="addcontact">
+Name:<input type="text" name="contact_name"><br>
+Contact:<input type="text" name="contac_email"><br>
+Email:<input type="text" name="contact_email"><br>
+</form>
+
 </body>
 </html>
