@@ -16,8 +16,8 @@ public class ContactServiceImpl  implements ContactService{
 	@Override
 	public boolean saveContct(Contact contact) {
 		// TODO Auto-generated method stub		
-//		boolean status= contactRepository.save(contact);
-//		return status;
+		boolean status= contactRepository.save(contact).equals(contact);
+		return status;
 	}
 	
 	@Override
@@ -35,11 +35,11 @@ public class ContactServiceImpl  implements ContactService{
 	
 	
 	@Override
-	public boolean deletById(Integer cID) {
+	public boolean deletById(Integer cId) {
 		// TODO Auto-generated method stub
 		
-		boolean status
-		return false;
+		boolean status= contactRepository.delete(cId);
+		return status;
 	}
 	
 }
